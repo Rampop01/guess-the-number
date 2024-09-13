@@ -11,6 +11,7 @@ const displayMessage = function (message) {
 };
 
 document.querySelector(".again").addEventListener("click", function () {
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
   document.querySelector(".guess").value = "";
   (document.querySelector(".number").style.width = "15rem"),
